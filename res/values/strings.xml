@@ -16,26 +16,14 @@
 -->
 
 <resources>
-    <!-- BAM Sizer main strings -->
-    <string name="app_name">Bam Sizer</string>
+    <!-- BAM Cleaner main strings -->
+    <string name="app_name">Bam Cleaner</string>
     <string name="menu_settings">Settings</string>
-    <string name="device_title">Device</string>
-    <string name="device_name_title">Name:</string>
-    <string name="codename_title">Codename:</string>
-    <string name="version_title">Version:</string>
-    <string name="file_name_title">File:</string>
-    <string name="curVer">Current Version</string>
     <string name="ok">OK</string>
-    <string name="title_update">Update</string>
-    <string name="device_info_title">Device Information</string>
-    <string name="up_to_date_title">Your system is up to date</string>
-    <string name="no_data_title">No data connection available</string>
-    <string name="error_reading_title">Cannot read SlimOTA properties</string>
-    <string name="update_file_title">Update:</string>
 
-    <!-- BAM Sizer  -->
+    <!-- BAM Cleaner  -->
     <string name="listsystem">list</string>
-    <string name="sizer_title">BAM Sizer</string>
+    <string name="sizer_title">BAM Cleaner</string>
     <string name="caution">Caution!</string>
     <string name="sizer_message_startup">This tool allows you to delete system apps. Use with caution and only delete apps you know are safe to be removed.\n\nThis tool has been original developed by SlimROM Team, all credits goes to them!</string>
     <string name="cancel">Cancel</string>

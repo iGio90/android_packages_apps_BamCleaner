@@ -13,7 +13,7 @@
  *
  *=========================================================================
  */
-package com.slim.sizer;
+package com.bam.cleaner;
 
 import java.io.BufferedWriter;
 import java.io.DataOutputStream;
@@ -40,9 +40,9 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.slim.ota.R;
+import com.bam.sizer.R;
 
-public class SlimSizer extends Activity {
+public class BamCleaner extends Activity {
     private final int STARTUP_DIALOG = 1;
     private final int DELETE_DIALOG = 2;
     private final int DELETE_MULTIPLE_DIALOG = 3;
@@ -55,7 +55,7 @@ public class SlimSizer extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.slim_sizer);
+        setContentView(R.layout.bam_cleaner);
         final Button delButton = (Button) findViewById(R.id.btn_delete);
         final Button profileButton = (Button) findViewById(R.id.btn_profile);
 

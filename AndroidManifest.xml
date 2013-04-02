@@ -18,7 +18,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bam.sizer"
+    package="com.bam.cleaner"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -40,7 +40,7 @@
         android:launchMode="singleTask"
         android:theme="@style/SlimOTA" >
         <activity
-            android:name="com.bam.sizer.BamSizer"
+            android:name="com.bam.cleaner.BamCleaner"
             android:label="@string/sizer_title"
             android:parentActivityName="com.android.settings" >
             <meta-data
