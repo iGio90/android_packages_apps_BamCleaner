@@ -18,7 +18,7 @@
 -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.slim.ota"
+    package="com.bam.sizer"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -40,51 +40,13 @@
         android:launchMode="singleTask"
         android:theme="@style/SlimOTA" >
         <activity
-            android:name="com.slim.center.SlimCenter"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name="com.slim.ota.SlimOTA"
+            android:name="com.bam.sizer.BamSizer"
             android:label="@string/sizer_title"
-            android:parentActivityName="com.slim.center.SlimCenter" >
+            android:parentActivityName="com.android.settings" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.myfirstapp.MainActivity" />
         </activity>
-        <activity
-            android:name="com.slim.sizer.SlimSizer"
-            android:label="@string/sizer_title"
-            android:parentActivityName="com.slim.center.SlimCenter" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.myfirstapp.MainActivity" />
-        </activity>
-
-        <service android:name="com.slim.ota.updater.UpdateService" />
-
-        <receiver android:name="com.commonsware.cwac.wakeful.AlarmReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-
-            <meta-data
-                android:name="com.commonsware.cwac.wakeful"
-                android:resource="@xml/wakeful" />
-        </receiver>
-        <receiver
-            android:name=".updater.ConnectivityReceiver"
-            android:enabled="false" >
-            <intent-filter>
-                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
-            </intent-filter>
-        </receiver>
-
-        <activity android:name=".settings.Settings" />
-        <activity android:name=".settings.About" />
     </application>
 
 </manifest>
