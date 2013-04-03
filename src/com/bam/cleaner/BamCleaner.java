@@ -40,7 +40,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.bam.sizer.R;
+import com.bam.cleaner.R;
 
 public class BamCleaner extends Activity {
     private final int STARTUP_DIALOG = 1;
